@@ -1,6 +1,7 @@
 from flask import Flask 
 from threading import Thread
 #from main import start
+import random
 from nextcord.ext import commands##
 import os #to get environment variable from AWS
 import asyncio##
