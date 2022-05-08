@@ -100,9 +100,7 @@ async def SendMessage(ctx):
             
         elif useConjuction == False:
             await ctx.send(filledTemplate)
-    
-#if __name__ == '__application__':
+
 
 def start():
-    #keep_alive()
     bot.run(token= api_key)

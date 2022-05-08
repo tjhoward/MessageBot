@@ -15,7 +15,7 @@ def hellow_world():
     return f"Hello. I am alive! {api_key}"
 
 def run():
-  application.run(host='0.0.0.0',port=8080)
+  application.run(host='0.0.0.0',port=4455)
 
 def keep_alive():
     t = Thread(target=run)
