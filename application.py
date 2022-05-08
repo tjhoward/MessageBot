@@ -10,8 +10,8 @@ application = Flask('__name__')
 @application.route('/')
 def hellow_world():
 
-    keep_alive()
-    start()
+    #keep_alive()
+    #start()
     return f"Hello. I am alive! {api_key}"
 
 def run():
