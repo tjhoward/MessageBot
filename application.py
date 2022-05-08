@@ -13,11 +13,10 @@ application = Flask('__name__')
 @application.route('/')
 def hellow_world():
 
-    keep_alive()
     #start()
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    loop.run_until_complete(bot.start(api_key))##
+    #loop = asyncio.new_event_loop()
+    #asyncio.set_event_loop(loop)
+    #loop.run_until_complete(bot.start(api_key))##
     #bot.start(api_key)
     return f"Hello. I am alive! {api_key}"
 
@@ -125,5 +124,6 @@ async def SendMessage(ctx):
         elif useConjuction == False:
             await ctx.send(filledTemplate)
 
-#loop = asyncio.get_event_loop()##
-#loop.run_until_complete(bot.start(api_key))##
+keep_alive()
+loop = asyncio.get_event_loop()##
+loop.run_until_complete(bot.start(api_key))##
