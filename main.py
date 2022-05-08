@@ -3,6 +3,7 @@ import random
 import os #to get environment variable from AWS
 
 api_key = os.environ['API_KEY']
+bot = commands.Bot(command_prefix = '.')
 
 class messages():
     def __init__(self, user_name):
@@ -73,8 +74,6 @@ class messages():
         #print("filled template is " + filled_template)
         return filled_template
 
-bot = commands.Bot(command_prefix = '.')
-
 @bot.command(name="message") #.hi
 async def SendMessage(ctx):
         q = messages('')
@@ -102,6 +101,6 @@ async def SendMessage(ctx):
             await ctx.send(filledTemplate)
 
 
-async def start():
-    bot.run(token= api_key)
+#async def start():
+#    bot.run(token= api_key)
     
