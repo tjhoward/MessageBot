@@ -1,6 +1,9 @@
 from nextcord.ext import commands
 import random
 from application import keep_alive
+import os #to get environment variable from AWS
+
+api_key = os.environ['API_KEY']
 
 class messages():
     def __init__(self, user_name):
@@ -102,4 +105,4 @@ async def SendMessage(ctx):
 
 if __name__ == '__main__':
   keep_alive()
-  bot.run(token= "ODE4MjY1MjIwMjI4MTg2MTUy.YEVi3w.rmShogj_JZeMm8GJMLAbl3_Mg_E")
+  bot.run(token= api_key)
