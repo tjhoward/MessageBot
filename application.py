@@ -3,6 +3,7 @@ from threading import Thread
 from main import start
 from nextcord.ext import commands##
 import os #to get environment variable from AWS
+import asyncio##
 
 api_key = os.environ['API_KEY']
 bot = commands.Bot(command_prefix = '.') ##
@@ -13,7 +14,9 @@ def hellow_world():
 
     #keep_alive()
     #start()
-    bot.run(token= api_key)
+    #bot.start(api_key)
+    loop = asyncio.get_event_loop()##
+    loop.run_until_complete(bot.start(api_key))##
     return f"Hello. I am alive! {api_key}"
 
 def run():
