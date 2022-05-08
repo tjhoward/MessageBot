@@ -103,6 +103,8 @@ async def SendMessage(ctx):
             await ctx.send(filledTemplate)
     
 
-if __name__ == '__application__':
-  keep_alive()
-  bot.run(token= api_key)
+#if __name__ == '__application__':
+
+def application():
+    keep_alive()
+    bot.run(token= api_key)
