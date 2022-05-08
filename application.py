@@ -14,11 +14,11 @@ application = Flask('__name__')
 def hellow_world():
 
     #start()
-    #loop = asyncio.new_event_loop()
+    loop = asyncio.new_event_loop()
     #asyncio.set_event_loop(loop)
     #loop.run_until_complete(bot.start(api_key))##
     #bot.start(api_key)
-    loop = asyncio.get_event_loop()##
+    #loop = asyncio.get_event_loop()##
     loop.run_until_complete(bot.login(api_key))##
     loop.run_until_complete(bot.connect())
     loop.run_until_complete(bot.close())
