@@ -102,5 +102,6 @@ async def SendMessage(ctx):
             await ctx.send(filledTemplate)
 
 
-def start():
+async def start():
     bot.run(token= api_key)
+    
