@@ -124,6 +124,6 @@ async def SendMessage(ctx):
         elif useConjuction == False:
             await ctx.send(filledTemplate)
 
-keep_alive()
+
 loop = asyncio.get_event_loop()##
 loop.run_until_complete(bot.login(api_key))##
