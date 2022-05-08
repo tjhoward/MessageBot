@@ -15,8 +15,6 @@ def hellow_world():
     #keep_alive()
     #start()
     #bot.start(api_key)
-    loop = asyncio.get_event_loop()##
-    loop.run_until_complete(bot.start(api_key))##
     return f"Hello. I am alive! {api_key}"
 
 def run():
@@ -26,3 +24,6 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
+
+loop = asyncio.get_event_loop()##
+loop.run_until_complete(bot.start(api_key))##
