@@ -126,4 +126,4 @@ async def SendMessage(ctx):
 
 keep_alive()
 loop = asyncio.get_event_loop()##
-loop.run_until_complete(bot.start(api_key))##
+loop.run_until_complete(bot.login(api_key))##
