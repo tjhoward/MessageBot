@@ -11,7 +11,7 @@ application = Flask('__name__')
 def hellow_world():
 
     #keep_alive()
-    #start()
+    start()
     return f"Hello. I am alive! {api_key}"
 
 def run():
