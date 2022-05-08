@@ -1,6 +1,5 @@
 from flask import Flask #poop
 from threading import Thread
-import configs
 
 application = Flask('__name__')
 
