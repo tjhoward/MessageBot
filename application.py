@@ -1,5 +1,6 @@
-from flask import Flask #poop
+from flask import Flask 
 from threading import Thread
+import os #to get environment variable from AWS
 
 application = Flask('__name__')
 
