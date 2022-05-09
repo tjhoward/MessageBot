@@ -9,23 +9,16 @@ import asyncio##
 api_key = os.environ['API_KEY']
 bot = commands.Bot(command_prefix = '.') ##
 
-'''''
+
 application = Flask('__name__')
 
 @application.route('/')
 def hellow_world():
 
-    #start()
-    loop = asyncio.new_event_loop()
-    #asyncio.set_event_loop(loop)
-    #loop.run_until_complete(bot.start(api_key))##
-    #bot.start(api_key)
-    #loop = asyncio.get_event_loop()##
-    loop.run_until_complete(bot.login(api_key))##
-    loop.run_until_complete(bot.connect())
-    loop.run_until_complete(bot.close())
-    return f"Hello. I am alive! {api_key}"
 
+  return f"Hello. I am alive! {api_key}"
+
+'''
 def run():
   #return "HIIII"
   application.run(host='0.0.0.0',port=8080)
@@ -34,8 +27,8 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
-
 '''
+
 
 class messages():
     def __init__(self, user_name):
