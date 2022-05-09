@@ -107,7 +107,14 @@ async def SendMessage(ctx):
 
 @bot.command(name="D") #.hi
 async def deex(ctx):
+    #emoji = get(bot.get_all_emojis(), name='EmojiName')
+    #await bot.add_reaction(message, emoji)
     await ctx.send("Deez nuts!")
+
+@bot.event
+async def on_message(message):
+    channel = message.channel
+    await channel.send('hi')
 
 if __name__ == "__main__":
     print("started")
