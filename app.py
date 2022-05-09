@@ -105,6 +105,9 @@ async def SendMessage(ctx):
         elif useConjuction == False:
             await ctx.send(filledTemplate)
 
+@bot.command(name="D") #.hi
+async def deex(ctx):
+    await ctx.send("Deez nuts!")
 
 if __name__ == "__main__":
     print("started")
