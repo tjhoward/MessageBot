@@ -114,13 +114,15 @@ async def deex(ctx):
 @bot.event
 async def on_message(message):
 
-    if message.author == bot.user: #ignore bot messages
-        return
+    #if message.author == bot.user: #ignore bot messages
+    #return
     
     channel = message.channel
-    if channel.name == "welcome":
-        await message.add_reaction(bot.get_emoji(973362310766788688))
+    if channel.name == "general":
+        await message.add_reaction(bot.get_emoji(883974396342059020))
         #await channel.send('hi')
+    elif channel.name == "welcome":
+        await message.add_reaction(bot.get_emoji(973362310766788688))
 
 if __name__ == "__main__":
     print("started")
