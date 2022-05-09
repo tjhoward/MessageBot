@@ -1,10 +1,10 @@
-from flask import Flask 
-from threading import Thread
+#from flask import Flask 
+#from threading import Thread
 #from main import start
 import random
 from nextcord.ext import commands##
 import os #to get environment variable from AWS
-import asyncio##
+#import asyncio##
 
 api_key = os.environ['API_KEY']
 bot = commands.Bot(command_prefix = '.') ##
@@ -106,7 +106,8 @@ async def SendMessage(ctx):
             await ctx.send(filledTemplate)
 
 
-if __name__ == "app":
-  bot.run(api_key)
+if __name__ == "__main__":
+    print("started")
+    bot.run(api_key)
 #loop = asyncio.get_event_loop()##
 #loop.run_until_complete(bot.login(api_key))##
