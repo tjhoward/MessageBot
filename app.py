@@ -113,6 +113,10 @@ async def deex(ctx):
 
 @bot.event
 async def on_message(message):
+
+    if message.author == bot.user: #ignore bot messages
+        return
+    
     channel = message.channel
     await channel.send('hi')
 
