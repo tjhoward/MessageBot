@@ -119,7 +119,7 @@ async def on_message(message):
     
     channel = message.channel
     if channel.name == "welcome":
-        message.add_reaction(bot.get_emoji(973362310766788688))
+        await message.add_reaction(bot.get_emoji(973362310766788688))
         #await channel.send('hi')
 
 if __name__ == "__main__":
