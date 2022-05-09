@@ -118,7 +118,7 @@ async def on_message(message):
         return
     
     channel = message.channel
-    await channel.send('hi')
+    #await channel.send('hi')
 
 if __name__ == "__main__":
     print("started")
