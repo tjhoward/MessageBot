@@ -8,6 +8,8 @@ import asyncio##
 
 api_key = os.environ['API_KEY']
 bot = commands.Bot(command_prefix = '.') ##
+
+'''''
 application = Flask('__name__')
 
 @application.route('/')
@@ -33,6 +35,7 @@ def keep_alive():
     t = Thread(target=run)
     t.start()
 
+'''
 
 class messages():
     def __init__(self, user_name):
@@ -130,5 +133,7 @@ async def SendMessage(ctx):
             await ctx.send(filledTemplate)
 
 
+if __name__ == "application":
+  bot.run(api_key)
 #loop = asyncio.get_event_loop()##
 #loop.run_until_complete(bot.login(api_key))##
