@@ -111,14 +111,14 @@ async def deex(ctx):
     #await bot.add_reaction(message, emoji)
     await ctx.send("Deez nuts!")
 
-@bot.listen('on_message')
+@bot.listen('on_message') ##listens for event
 async def my_message(message):
 
     #if message.author == bot.user: #ignore bot messages
     #return
     
     channel = message.channel
-    if channel.name == "general" and message.author.name == "Downpour":
+    if channel.name == "general" and message.author.Member.name == "Downpour":
         await message.add_reaction(bot.get_emoji(883974396342059020))
         #await channel.send('hi')
     elif channel.name == "welcome":
