@@ -117,7 +117,7 @@ async def my_message(message):
     #if message.author == bot.user: #ignore bot messages
     #return
     x = random.randint(0,100)
-    m
+    
     channel = message.channel
     if channel.name == "general" and x < 10:
         await message.add_reaction(bot.get_emoji(883974396342059020))
