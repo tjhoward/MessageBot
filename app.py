@@ -117,11 +117,13 @@ async def my_message(message):
     #if message.author == bot.user: #ignore bot messages
     #return
     x = random.randint(0,100)
-    
+    m
     channel = message.channel
     if channel.name == "general" and x < 10:
         await message.add_reaction(bot.get_emoji(883974396342059020))
         #await channel.send('hi')
+    elif channel.name == "welcome" and x < 50:
+        await message.add_reaction(bot.get_emoji("clown"))
 
 if __name__ == "__main__":
     print("started")
