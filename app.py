@@ -123,7 +123,8 @@ async def my_message(message):
         await message.add_reaction(bot.get_emoji(883974396342059020))
         #await channel.send('hi')
     elif channel.name == "welcome" and x < 50:
-        await message.add_reaction("clown")
+        emoji = '\N{THUMBS UP SIGN}'
+        await message.add_reaction(emoji)
 
 if __name__ == "__main__":
     print("started")
