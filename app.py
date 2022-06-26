@@ -119,7 +119,7 @@ async def my_message(message):
     x = random.randint(0,100)
     
     channel = message.channel
-    if channel.name == "general" and x < 10:
+    if channel.name == "general" and x > 1000:
         await message.add_reaction(bot.get_emoji(883974396342059020))
         #await channel.send('hi')
     elif channel.name == "welcome" and x < 50:
