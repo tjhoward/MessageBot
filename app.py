@@ -126,6 +126,11 @@ async def my_message(message):
         emoji = '\N{THUMBS UP SIGN}'
         await message.add_reaction(emoji)
 
+    elif channel.name == "music" and message.author == "resol":
+        emoji = '\N{THUMBS UP SIGN}'
+        #await message.add_reaction(emoji)
+        await channel.send(emoji)
+
 if __name__ == "__main__":
     print("started")
     bot.run(api_key)
