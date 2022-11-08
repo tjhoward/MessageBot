@@ -127,10 +127,10 @@ async def my_message(message):
         await message.add_reaction(emoji)
 
     elif channel.name == "musicc" and message.author != bot.user : #and str(message.author) == "resol":
-        emoji = '\N{THUMBS UP SIGN}'
+        emoji = '\N{FIRE}'
         x = str(message.author)
         await channel.send(x)
-        await channel.send(emoji)
+        await channel.send(emoji + emoji + emoji)
 
 if __name__ == "__main__":
     print("started")
