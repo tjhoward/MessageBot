@@ -126,10 +126,11 @@ async def my_message(message):
         emoji = '\N{THUMBS UP SIGN}'
         await message.add_reaction(emoji)
 
-    elif channel.name == "music" and str(message.author) == "resol":
+    elif channel.name == "musicc": #and str(message.author) == "resol":
         emoji = '\N{THUMBS UP SIGN}'
+        x = str(message.author)
         #await message.add_reaction(emoji)
-        await channel.send("hi")
+        await channel.send(x)
         await channel.send(emoji)
 
 if __name__ == "__main__":
